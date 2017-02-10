@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+    <style>
+  #map {
+    height: 91.5%;
+    position:relative;
+  }
+        #contactform{
+            z-index:5;
+            position:absolute;
+            width: 90%;
+            padding-top: 20%;
+            padding-left: 10%;
+        }
+          #addbutton{
+            top: 85%;
+            left: 5%;
+            z-index:6;
+            position:absolute;
+        }
+   
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+  }
+</style>
+</head>
+<body>
+  <nav class="light-green lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">High-Qu</a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+       <li><div class="userView">
+      <div class="background">
+        <img style="width:100%;" src="img/materialize-bg.jpg">
+      </div>
+       <div class="row">
+           <div class="col s4">
+               <a href="#!user"><img class="circle" src="img/doge.jpeg"></a>
+           </div>
+           <div class="col s8">
+               <h5 class="white-text">Dogest Doge</h5>
+           </div>
+       </div>
+      <div class="divider"></div>
+
+      <h6 class="white-text">123 Trails Hiked</h6>
+      <h6 class="white-text">75 Reviews</h6>
+      <h6 class="white-text">69 Photos</h6>
+      <br>
+
+
+    </div></li>
+    <li><a class="waves-effect" href="index.html">Explore</a></li>
+    <li><a class="waves-effect" href="mytrails.html">My Created Trails</a></li>
+    <li><a class="waves-effect" href="hikehistory.html">Hike History</a></li>
+    <li><a class="waves-effect" href="favs.html">Favorites</a></li>
+    <li><a class="waves-effect" href="profile.html">Profile</a></li>
+    <li><a class="waves-effect" href="help.html">Help</a></li>
+    <li><a class="waves-effect" href="settings.html">Settings</a></li>
+          
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+    
+    
+        <div class ="container" id ="contactform">
+         <div class="input-field" style="background-color:white;">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        </div>
+    </div>
+    
+          <a id="addbutton" href="addTrail.html" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
+    
+    
+       <div id="map"></div>
+    
+
+
+    
+  
+     
+       
+    
+    
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt2_jkQWKuHl6iy02idQyWXAQTGJLx2io&callback=initMap"
+    async defer></script>
+    
+    
+   
+    
+    
+    
+ 
+    
+     
+    
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
